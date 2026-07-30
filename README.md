@@ -792,7 +792,7 @@ The server relies exclusively on `config.yaml` for runtime configuration.
 *   `generation_defaults`: Default UI values for `temperature`, `exaggeration`, `cfg_weight`, `seed`, `speed_factor`, `language`.
 *   `audio_output`: `format`, `sample_rate`, `max_reference_duration_sec`.
 *   `ui_state`: Stores the last used text, voice mode, file selections, etc., for UI persistence.
-*   `ui`: `title`, `show_language_select`, `max_predefined_voices_in_dropdown`.
+*   `ui`: `title`, `show_language_select`, `max_predefined_voices_in_dropdown`, `auto_open_browser`.
 *   `debug`: `save_intermediate_audio`.
 
 ⭐ **Remember:** Changes made to `server`, `model`, `tts_engine`, or `paths` sections in `config.yaml` (or via the UI's Server Configuration section) **require a server restart** to take effect. Changes to `generation_defaults` or `ui_state` are applied dynamically or on the next page load.

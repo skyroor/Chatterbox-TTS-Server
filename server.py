@@ -161,11 +161,12 @@ async def lifespan(app: FastAPI):
             logger.info("TTS Model loaded successfully via engine.")
             host_address = get_host()
             server_port = get_port()
-            browser_thread = threading.Thread(
-                target=lambda: _delayed_browser_open(host_address, server_port),
-                daemon=True,
-            )
-            browser_thread.start()
+            if config_manager.get_bool("ui.auto_open_browser", True):
+                browser_thread = threading.Thread(
+                    target=lambda: _delayed_browser_open(host_address, server_port),
+                    daemon=True,
+                )
+                browser_thread.start()
 
         logger.info("Application startup sequence complete.")
         startup_complete_event.set()

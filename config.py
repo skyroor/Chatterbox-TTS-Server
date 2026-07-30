@@ -102,6 +102,7 @@ DEFAULT_CONFIG: Dict[str, Any] = {
         "title": "Chatterbox TTS Server",  # Title displayed in the web UI.
         "show_language_select": True,  # Whether to show language selection in the UI.
         "max_predefined_voices_in_dropdown": 20,  # Max predefined voices to list in UI dropdown.
+        "auto_open_browser": True,
     },
     "debug": {  # Settings for debugging purposes
         "save_intermediate_audio": False  # If true, save intermediate audio files for debugging

@@ -492,6 +492,7 @@ The following table describes the main sections and some key parameters you migh
 | **`ui`**              | `title`                       | string        | Title displayed in the web UI.                                                                                | `Chatterbox TTS Server`  |
 |                       | `show_language_select`        | boolean       | Whether to show language selection in the UI.                                                                 | `true`                   |
 |                       | `max_predefined_voices_in_dropdown`| integer  | Max predefined voices to list in UI dropdown before it might become less usable.                            | `20`                     |
+|                       |`auto_open_browser`          | boolean  | Automatically open the web UI in the default browser on server startup.                    | `true`                   |
 | **`debug`**           | `save_intermediate_audio`     | boolean       | If true, save intermediate audio files during chunk processing for debugging.                                 | `false`                  |
 
 **Note:** Paths can be specified relative to the project root or as absolute paths.
